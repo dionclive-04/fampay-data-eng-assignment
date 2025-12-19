@@ -69,12 +69,12 @@ fampay-stock-assignment/
 |   ├── result_AMD.csv
 |   ├── result_AMZN.csv
 |   ├── result_AVGO.csv
-|   ├── output/result_CSCO.csv
-|   ├── output/result_MSFT.csv
-|   ├── output/result_NFLX.csv
-|   ├── output/result_PEP.csv
-|   ├── output/result_TMUS.csv
-|   ├── output/result_TSLA.csv
+|   ├── result_CSCO.csv
+|   ├── result_MSFT.csv
+|   ├── result_NFLX.csv
+|   ├── result_PEP.csv
+|   ├── result_TMUS.csv
+|   ├── result_TSLA.csv
 │
 ├── requirements.txt
 └── README.md
