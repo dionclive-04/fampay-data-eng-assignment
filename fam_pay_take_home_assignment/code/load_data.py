@@ -15,5 +15,3 @@ def load_data(file_path: str) -> pd.DataFrame:
     df = df.sort_values(by=["ticker", "date"]).reset_index(drop=True)
     print(df[df.duplicated()])
     return df
-
-load_data('/Users/dionsaldanha/PycharmProjects/fam_pay_take_home_assignment/data/output_file.csv')
