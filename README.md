@@ -101,7 +101,7 @@ Fail-fast validation prevents silent downstream data corruption.
 
 ---
 
-## 📆 Monthly Aggregation Logic (`aggregator.py`)
+## Monthly Aggregation Logic (`aggregator.py`)
 
 Daily stock prices are resampled into **monthly OHLC** values using Pandas `Grouper`.
 
@@ -130,7 +130,7 @@ All indicators are calculated **only on monthly closing prices**, as required.
 - **EMA 20** – 20-month Exponential Moving Average
 
 ### Notes on Indicator Behavior
-- SMA values are `NaN` for initial months due to insufficient historical data
+- SMA values are NaN for initial months due to insufficient historical data for the first 10 months or 20 months
 - EMA values initialize immediately using the first available closing price
 - Calculations are fully vectorized using Pandas (`rolling`, `ewm`)
 - No external technical-analysis libraries are used
@@ -195,4 +195,3 @@ Key principles followed in this solution:
 * Modular, readable, and maintainable code
 * Vectorized Pandas operations for performance
 * Clear separation between transformation logic and I/O
-* 
