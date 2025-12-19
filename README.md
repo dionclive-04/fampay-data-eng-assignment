@@ -55,7 +55,7 @@ Each step is implemented in its own module to improve readability, testability, 
 
 fampay-stock-assignment/
 │
-├── output.csv
+├── output_file.csv
 │
 ├── code/
 │   ├── loader.py        # Data ingestion & validation
