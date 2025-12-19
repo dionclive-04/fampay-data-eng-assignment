@@ -55,8 +55,7 @@ Each step is implemented in its own module to improve readability, testability, 
 
 fampay-stock-assignment/
 │
-├── data/
-│   └── stocks.csv
+├── output.csv
 │
 ├── code/
 │   ├── loader.py        # Data ingestion & validation
@@ -66,7 +65,16 @@ fampay-stock-assignment/
 │   └── main.py         # Pipeline orchestration
 │
 ├── output/
-│   └── result_AAPL.csv
+│   |── result_AAPL.csv
+|   ├── result_AMD.csv
+|   ├── result_AMZN.csv
+|   ├── result_AVGO.csv
+|   ├── output/result_CSCO.csv
+|   ├── output/result_MSFT.csv
+|   ├── output/result_NFLX.csv
+|   ├── output/result_PEP.csv
+|   ├── output/result_TMUS.csv
+|   ├── output/result_TSLA.csv
 │
 ├── requirements.txt
 └── README.md
@@ -187,16 +195,4 @@ Key principles followed in this solution:
 * Modular, readable, and maintainable code
 * Vectorized Pandas operations for performance
 * Clear separation between transformation logic and I/O
-
----
-
-## Summary
-
-This project focuses on **data correctness, clarity, and engineering discipline** rather than shortcuts.
-
-The goal was to build a solution that:
-
-* Produces accurate financial aggregates
-* Can be reasoned about and extended
-* Reflects real-world data engineering practices
 * 
