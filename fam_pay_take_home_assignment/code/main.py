@@ -3,7 +3,7 @@ from aggregator import aggregate_monthly
 from indicators import add_technical_indicators
 from writer import write_per_ticker
 
-
+########  Note: Insert your own local data path and output directory as well ############
 DATA_PATH = "/Users/dionsaldanha/PycharmProjects/fam_pay_take_home_assignment/data/output_file.csv"
 OUTPUT_DIR = "./output"
 
